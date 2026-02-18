@@ -85,9 +85,9 @@ export default function ReceiptsPage() {
     doc.text(`Transaction ID: ${receipt.transactionId}`, 20, 55)
     
     doc.setFontSize(12)
-    doc.setFont(undefined, "bold")
+    doc.setFont("helvetica", "bold")
     doc.text(`Tax Type: ${receipt.type}`, 20, 70)
-    doc.setFont(undefined, "normal")
+    doc.setFont("helvetica", "normal")
     
     doc.text(`Amount: ${formatCurrency(receipt.amount)}`, 20, 80)
     doc.text(`Payment Date: ${formatDate(receipt.date)}`, 20, 90)
